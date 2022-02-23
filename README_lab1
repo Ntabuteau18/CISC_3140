@@ -1,2 +1,6 @@
 This is the instruction set for operating the awk script for the ranking of the cars in the data_lab1
-submodule.
+submodule. The instructions are for you to run the awk command from your command
+line and make sure that your data.csv file is in place. Your data.csv will be 
+ran and the output of the car rankings will be placed into a seperate file known
+as Output. The output will contain the necessary fields relating to the cars and the
+total amount of the columns which determine their rankings at the last column
