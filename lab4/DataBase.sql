@@ -39,22 +39,27 @@ CREATE TABLE Car_data (
 );
 .import data.csv Car_data
 
-CREATE TABLE Cars(
-    Car_ID INT PRIMARY KEY,
-    Year INT,
-    Make TEXT,
-    Model TEXT
+CREATE TABLE CarInfo(
+Car_ID INT PRIMARY KEY,
+Year INT,
+Make TEXT,
+Model TEXT,
+Judge_ID TEXT,
+Judge_Name TEXT
 );
-.mode csv
-.import data.csv Cars
-DELETE FROM Cars WHERE Car_ID = 'Car_ID';
+INSERT INTO Car (Car_ID, Year, Make, Model, Judge_ID, Judge_Name) 
+SELECT Car_ID, Year, Make, Model, Judge_ID, Judge_Name
+FROM Car_data WHERE 1;
 
-CREATE TABLE Owners(
+
+
+CREATE TABLE OwnerInfo(
     Car_ID INT PRIMARY KEY,
     Name TEXT,
     Email TEXT
 );
-.mode csv
-.import \ownersTable.csv Owners
+INSERT INTO Owner (Car_ID, Name, Email) SELECT Car_ID, Name, Email
+FROM Car_data WHERE 1;
+
 
 DELETE FROM Owners WHERE Car_ID = 'Car_ID';
