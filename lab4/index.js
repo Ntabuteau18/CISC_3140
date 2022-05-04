@@ -3,11 +3,11 @@ var express = require("express")
 var app = express()
 
 //server port
-var HTTP_Port = 3010
+var HTTP_Port = 8000
 
 //start server
-app.listen(HTTP_PORT, () => {
-    console.log("Server running on port " + HTTP_PORT)
+app.listen(HTTP_Port, () => {
+    console.log("Server running on port " + HTTP_Port)
 });
 
 
@@ -16,7 +16,16 @@ app.get("/", (req, res, next) => {
     res.json({"message":"Ok"})
 });
 
-// Default response f
+const db = new sqlite3.Database(CarData.db, (err) => {
+    if (err) {
+        console.error("Error occured opening database " + err.message);
+    } else {
+        console.log('Connected to the database.')
+    }
+});
+
+
+// Default response 
 app.use(function(req, res){
     res.status(404);
 });
