@@ -1,0 +1,20 @@
+{
+  "name": "lab4-api",
+  "version": "1.0.0",
+  "description": "Rest API for lab4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ntabuteau18/CISC_3140.git"
+  },
+  "author": "Naldy Tabuteau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ntabuteau18/CISC_3140/issues"
+  },
+  "homepage": "https://github.com/Ntabuteau18/CISC_3140#readme"
+}

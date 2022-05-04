@@ -38,3 +38,23 @@ CREATE TABLE Car_data (
     Mods_Overall INT
 );
 .import data.csv Car_data
+
+CREATE TABLE Cars(
+    Car_ID INT PRIMARY KEY,
+    Year INT,
+    Make TEXT,
+    Model TEXT
+);
+.mode csv
+.import data.csv Cars
+DELETE FROM Cars WHERE Car_ID = 'Car_ID';
+
+CREATE TABLE Owners(
+    Car_ID INT PRIMARY KEY,
+    Name TEXT,
+    Email TEXT
+);
+.mode csv
+.import \ownersTable.csv Owners
+
+DELETE FROM Owners WHERE Car_ID = 'Car_ID';
