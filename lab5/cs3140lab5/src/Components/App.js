@@ -7,7 +7,6 @@ const StyledLink = styled(Link)`
     text-decoration: underline;
     color: blue;
 `;
-
 function App() {
     return (
         <>
@@ -24,7 +23,7 @@ function App() {
                     <StyledLink to="/NewOwnerInfo">Update Owners Info</StyledLink>
                 </ul>
             </nav>
-            <Outlet />
+            <Outlet/>
         </>
     );
 }

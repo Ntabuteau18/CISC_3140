@@ -7,7 +7,7 @@ class Owners extends React.Component {
 
   async componentDidMount() {
     try{
-      const response = await fetch('http://localhost:3000/api/OwnerInfo')
+      const response = await fetch('http://localhost:3000/Owners')
       const data = await response.json()
       console.log(data)
       this.setState({data: data.data});
@@ -17,7 +17,7 @@ class Owners extends React.Component {
   }
 
   render() {
-    console.log('render call')
+    console.log('')
     const {data} = this.state
     return ( 
       <div>
@@ -28,8 +28,7 @@ class Owners extends React.Component {
               <li>CarID:{item.Car_ID}</li> 
               <div> <li>Name:</li></div> {item.Name} 
               <li>Email:</li> {item.Email}
-            </li>
-          )}
+            </li>)}
         </ul>
       </div>
     )

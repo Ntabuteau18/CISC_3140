@@ -7,7 +7,7 @@ class Cars extends React.Component {
 
   async componentDidMount() {
     try{
-      const response = await fetch('http://localhost:3000/car')
+      const response = await fetch('http://localhost:3000/Cars')
       const data = await response.json()
       console.log(data)
       this.setState({data: data.data});

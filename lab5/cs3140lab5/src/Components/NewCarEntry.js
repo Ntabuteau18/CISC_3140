@@ -11,7 +11,6 @@ export default function NewCarEntry() {
  
     
     const submitHandler = (e) => {
-
         e.preventDefault()
 
         const data = {
@@ -20,11 +19,11 @@ export default function NewCarEntry() {
             "Model": Model
         }
 
-        axios.patch(`http://localhost:3001/api/car/${Car_ID}`, data)
+        axios.patch(`http://localhost:3001/Cars/${Car_ID}`, data)
         .then(response => {
             console.log(data)
             console.log(response)
-            console.log("response")
+            console.log("")
             setCarID('')
             setYear('')
             setMake('')

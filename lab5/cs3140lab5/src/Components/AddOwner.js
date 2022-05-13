@@ -22,7 +22,7 @@ class AddOwner extends Component {
 
     console.log(this.state)
 
-    axios.post('http://localhost:3000/OwnerInfo/', this.state)
+    axios.post('http://localhost:3000/Owners/', this.state)
     .then(response => {
       console.log(response)
       this.setState({
@@ -69,7 +69,7 @@ class AddOwner extends Component {
               Cancel
             </button>
             <button 
-                onClick={() => alert("Insert Complete")} >
+                onClick={() => alert("Complete")} >
                 Submit
             </button>
            </form>

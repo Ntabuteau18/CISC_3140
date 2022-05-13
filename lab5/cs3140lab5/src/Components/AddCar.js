@@ -23,7 +23,7 @@ class AddCar extends Component {
 
     console.log(this.state)
 
-    axios.post('http://localhost:3001/api/car/', this.state)
+    axios.post('http://localhost:3000/Cars/', this.state)
     .then(response => {
       console.log(response)
       this.setState({

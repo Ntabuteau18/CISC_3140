@@ -17,7 +17,7 @@ class Search extends React.Component {
             carID:event.target.carID.value
         })
         
-         fetch('http://localhost:3001/api/car/'+event.target.carID.value)
+         fetch('http://localhost:3000/Cars/'+event.target.carID.value)
              .then(response=>{
                  return response.json();
              })
@@ -29,33 +29,31 @@ class Search extends React.Component {
              .catch(error=>{
                  console.log("error",error)
              }).
-             then(()=>console.log(this.state.results)); 
+             then(()=>console.log(this.state.results));             
              
-             
-        fetch('http://localhost:3001/api/OwnerInfo/'+event.target.carID.value)
+        fetch('http://localhost:3000/Owners/'+event.target.carID.value)
         .then(response=>{
-            return response.json();
-        })
+            return response.json(); })
         .then(data =>{
             this.setState({
             results2: data.data
             })                
         })
-        .catch(error=>{
-            console.log("error",error)
+        .catch(err=>{
+            console.log("error",err)
         }).
         then(()=>console.log(this.state.results));  
     }
 
     render() {
-        console.log("render")
+        console.log("")
         return (
             
             <div> 
                             
                 <h1>Search For Car and Owners</h1>                       
                 <form onSubmit={this.handleChange}>
-                    <h2> Enter Car ID or Owner Information</h2>
+                    <h2> Enter Car ID or Owner</h2>
                     <input type="number" placeholder="Car_ID" name="carID"></input>
                     <input type="submit" placeholder="Search"></input>
                 </form>                       
