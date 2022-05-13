@@ -11,22 +11,21 @@ const StyledLink = styled(Link)`
 function App() {
     return (
         <>
-        <h1>Lab5</h1>
+        <h1>Lab5 FrontEnd</h1>
             <nav>
                 <ul>
-                    <StyledLink to="/home">Homepage</StyledLink> 
-                    <StyledLink to="/search">Search Engine</StyledLink>
-                    <StyledLink to="/cars">Cars</StyledLink>
-                    <StyledLink to="/owners">Owners</StyledLink>
-                    <StyledLink to="/addcar">Add a New Car</StyledLink>
-                    <StyledLink to="/updatecar">Update Car Info</StyledLink>
-                    <StyledLink to="/addowner">Add New Owner</StyledLink>
-                    <StyledLink to="/updateowner">Update Owners Info</StyledLink>
+                    <StyledLink to="/Home">Homepage</StyledLink> 
+                    <StyledLink to="/Search">Search Engine</StyledLink>
+                    <StyledLink to="/Cars">Cars</StyledLink>
+                    <StyledLink to="/Owners">Owners</StyledLink>
+                    <StyledLink to="/NewCarEntry">Add a New Car</StyledLink>
+                    <StyledLink to="/AddCar">Update Car Info</StyledLink>
+                    <StyledLink to="/AddOwner">Add New Owner</StyledLink>
+                    <StyledLink to="/NewOwnerInfo">Update Owners Info</StyledLink>
                 </ul>
             </nav>
             <Outlet />
         </>
     );
 }
-
 export default App;
