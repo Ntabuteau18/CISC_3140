@@ -6,9 +6,9 @@ import Cars from "./Components/Cars";
 import Owners from "./Components/Owners";
 import Search from "./Components/Search";
 import AddCar from "./Components/AddCar";
-import UpdateCar from "./Components/UpdateCar";
+import AddaCar from "./Components/AddaCar";
 import AddOwner from "./Components/AddOwner";
-import UpdateOwner from "./Components/UpdateOwner";
+import NewOwnerInfo from "./Components/NewOwnerInfo";
 
 ReactDOM.render(
     <BrowserRouter>
