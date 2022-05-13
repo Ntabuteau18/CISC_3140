@@ -19,7 +19,7 @@ export default function NewCarEntry() {
             "Model": Model
         }
 
-        axios.patch(`http://localhost:3001/Cars/${Car_ID}`, data)
+        axios.patch(`http://localhost:3000/Cars/${Car_ID}`, data)
         .then(response => {
             console.log(data)
             console.log(response)
