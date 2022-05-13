@@ -22,7 +22,7 @@ class AddOwner extends Component {
 
     console.log(this.state)
 
-    axios.post('http://localhost:3001/api/OwnerInfo/', this.state)
+    axios.post('http://localhost:3000/OwnerInfo/', this.state)
     .then(response => {
       console.log(response)
       this.setState({
@@ -31,19 +31,17 @@ class AddOwner extends Component {
         Email: ''
       })
     })
-    .catch(error => {
-      console.log(error)
+    .catch(err => {
+      console.log(err)
     })
   }
 
   render() {
     
     const { Car_ID, Name, Email} = this.state
-
-    return (
-        
+    return (        
       <div>
-        <div className="addCarDisplay">
+        <div className="ShowNames">
           <form onSubmit={this.submitHandler}>
           <label>Car ID: </label>
           <input 
@@ -71,7 +69,7 @@ class AddOwner extends Component {
               Cancel
             </button>
             <button 
-                onClick={() => alert("Insert Successful")} >
+                onClick={() => alert("Insert Complete")} >
                 Submit
             </button>
            </form>
