@@ -17,7 +17,7 @@ export default function UpdateOwner() {
             "Email": Email,
         }
 
-        axios.patch(`http://localhost:3001/api/owner/${Car_ID}`, data)
+        axios.patch(`http://localhost:3000/api/OwnerInfo/${Car_ID}`, data)
         .then(response => {
             console.log(data)
             console.log(response)
