@@ -1,7 +1,8 @@
 **Description**
 
 This is the README File for lab 5. The purpose of this lab is to
-serve as a front end using the databases from lab 4 to allow users to view and update data directly in the database on a local host
+serve as a front end using the databases from lab 4 to allow users to view and update data directly in the database on a local host. Please
+ignore any files automatically created by React
 
 **DEPENDENCIES**
 
