@@ -11,7 +11,7 @@ create a backend using the databases from lab 2 to allow users to view and updat
         * SQlite3
         * NPM
         * NPM Express
-        * Data.csv file containing the data you are working with
+        * Data.csv file containing the data you are working with.
 
 
 
