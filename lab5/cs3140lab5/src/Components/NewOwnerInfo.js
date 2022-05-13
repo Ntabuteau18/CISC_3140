@@ -7,30 +7,27 @@ export default function UpdateOwner() {
     const [Name, setName] = useState('')
     const [Email, setEmail] = useState('')
     
-
     const submitHandler = (e) => {
-
         e.preventDefault()
 
-        const data = {
+        const info = {
             "Name": Name,
             "Email": Email,
         }
 
-        axios.patch(`http://localhost:3000/api/OwnerInfo/${Car_ID}`, data)
+        axios.patch(`http://localhost:3000/Owners/${Car_ID}`, info)
         .then(response => {
-            console.log(data)
+            console.log(info)
             console.log(response)
             console.log("response")
             setCarID('')
             setName('')
             setEmail('')
         })
-            .catch(error => {
-                console.log(error)
+            .catch(err => {
+                console.log(err)
         })
     }
-
     return (
       <div >
         <div >
