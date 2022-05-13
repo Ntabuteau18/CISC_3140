@@ -18,4 +18,9 @@ serve as a front end using the databases from lab 4 to allow users to view and u
     cause some processes to load and may take some time but eventually you will be moved to a localhost 3000
     with the website with various options listed. You have succeccsfully enetered the frontend.
 
-    
+**Storyboard** 
+
+    There are many simple pathways users can take with this frontend in exploring its options such
+    as updating the owner information or adding a entirely new owner. There's also updating car information already stored
+    and making new car information to be entered. You can also search the database for previous information on cars or on owners
+    thats been already in the system.
