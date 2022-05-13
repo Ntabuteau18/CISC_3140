@@ -21,13 +21,13 @@ class Owners extends React.Component {
     const {data} = this.state
     return ( 
       <div>
-          <h1>Owners List</h1>
+          <h1>Owners</h1>
         <ul>
           {data.map((item,i)=>
             <li key={i}>
-              <li>Car_ID ={item.Car_ID},</li> 
-              Name = {item.Name}, 
-              Email = {item.Email}
+              <li>CarID:{item.Car_ID}</li> 
+              <div> <li>Name:</li></div> {item.Name} 
+              <li>Email:</li> {item.Email}
             </li>
           )}
         </ul>

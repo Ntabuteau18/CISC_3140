@@ -22,19 +22,15 @@ class Cars extends React.Component {
     return (
              
       <div>
-        <h1>Cars List</h1>
+        <h1>Cars</h1>
         <ul>
           {data.map((item,i)=>
             <li key={i}>
-          <li>Car_ID: {item.Car_ID}</li> 
+          <li>CarID: {item.Car_ID}</li> 
           <div> Year:</div>  {item.Year} 
               <div>Make:</div> {item.Make} 
               <div>Model:</div>  {item.Model}
-            </li>
-          )}
+            </li> )}
         </ul>
-      </div>
-    )
-  }
-}
+      </div> )}}
 export default Cars;
