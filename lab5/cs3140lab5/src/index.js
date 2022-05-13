@@ -6,7 +6,7 @@ import Cars from "./Components/Cars";
 import Owners from "./Components/Owners";
 import Search from "./Components/Search";
 import AddCar from "./Components/AddCar";
-import AddaCar from "./Components/AddaCar";
+import NewCarEntry from "./Components/NewCarEntry";
 import AddOwner from "./Components/AddOwner";
 import NewOwnerInfo from "./Components/NewOwnerInfo";
 
@@ -19,9 +19,9 @@ ReactDOM.render(
                 <Route path="owners" element={<Owners />} />
                 <Route path="search" element={<Search />} />
                 <Route path="addcar" element={<AddCar />} />
-                <Route path="updatecar" element={<UpdateCar />} />
+                <Route path="updatecar" element={<NewCarEntry />} />
                 <Route path="addowner" element={<AddOwner />} />
-                <Route path="updateowner" element={<UpdateOwner />} />
+                <Route path="updateowner" element={<AddCar />} />
                 <Route path="*" element={
                     <main style={{ padding: "1rem" }}>
                         <p>Invalid URL</p>

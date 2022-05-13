@@ -26,7 +26,7 @@ class Cars extends React.Component {
         <ul>
           {data.map((item,i)=>
             <li key={i}>
-          <li>Car_ID: {item.Car_ID},</li> 
+          <li>Car_ID: {item.Car_ID}</li> 
           <div> Year:</div>  {item.Year} 
               <div>Make:</div> {item.Make} 
               <div>Model:</div>  {item.Model}

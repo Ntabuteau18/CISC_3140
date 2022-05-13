@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class UpdateCar extends Component {
+class AddCar extends Component {
 
   constructor(props) {
     super(props)
@@ -87,4 +87,4 @@ class UpdateCar extends Component {
     )
   }
 }
-export default UpdateCar
+export default AddCar

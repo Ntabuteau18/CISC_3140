@@ -32,7 +32,7 @@ class Search extends React.Component {
              then(()=>console.log(this.state.results)); 
              
              
-        fetch('http://localhost:3001/api/owner/'+event.target.carID.value)
+        fetch('http://localhost:3001/api/OwnerInfo/'+event.target.carID.value)
         .then(response=>{
             return response.json();
         })
