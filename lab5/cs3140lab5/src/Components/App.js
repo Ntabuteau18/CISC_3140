@@ -14,12 +14,12 @@ function App() {
         <h1>Lab5</h1>
             <nav>
                 <ul>
-                    <StyledLink to="/home">Home</StyledLink> 
-                    <StyledLink to="/cars">Cars List</StyledLink>
-                    <StyledLink to="/owners">Owners List</StyledLink>
+                    <StyledLink to="/home">Homepage</StyledLink> 
                     <StyledLink to="/search">Search</StyledLink>
-                    <StyledLink to="/addcar">Add Car</StyledLink>
-                    <StyledLink to="/updatecar">Update Car</StyledLink>
+                    <StyledLink to="/cars">Cars</StyledLink>
+                    <StyledLink to="/owners">Owners</StyledLink>
+                    <StyledLink to="/addcar">Add a Car</StyledLink>
+                    <StyledLink to="/updatecar">Update Cars</StyledLink>
                     <StyledLink to="/addowner">Add Owner</StyledLink>
                     <StyledLink to="/updateowner">Update Owner</StyledLink>
                 </ul>

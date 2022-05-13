@@ -22,7 +22,7 @@ class AddOwner extends Component {
 
     console.log(this.state)
 
-    axios.post('http://localhost:3001/api/owner/', this.state)
+    axios.post('http://localhost:3000/api/owner/', this.state)
     .then(response => {
       console.log(response)
       this.setState({

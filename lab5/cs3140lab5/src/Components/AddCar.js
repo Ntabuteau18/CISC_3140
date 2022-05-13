@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class AddCar extends Component {
+class UpdateCar extends Component {
 
   constructor(props) {
     super(props)
@@ -40,12 +40,11 @@ class AddCar extends Component {
 
   render() {
     
-    const { Car_ID, Year, Make, Model} = this.state
-
+    const {Car_ID, Year, Make, Model} = this.state
     return (
         
       <div>
-        <div className="addCarDisplay">
+        <div className="UpdateCars">
           <form onSubmit={this.submitHandler}>
           <label>Car ID: </label>
           <input 
@@ -79,7 +78,7 @@ class AddCar extends Component {
               Cancel
             </button>
             <button 
-                onClick={() => alert("Insert Successful")} >
+                onClick={() => alert("Complete")} >
                 Submit
             </button>
            </form>
@@ -88,4 +87,4 @@ class AddCar extends Component {
     )
   }
 }
-export default AddCar
+export default UpdateCar
